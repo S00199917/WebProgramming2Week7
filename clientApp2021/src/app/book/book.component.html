@@ -1,1 +1,28 @@
-<p>book works!</p>
+<ol>
+    <li *ngFor='let b of books'>
+        <ul>
+            <li>
+                <h3>{{b.title}}</h3>
+            </li>
+            <li>
+                Year Written: {{b.year_written}}
+            </li>
+            <li>
+                Edition: {{b.edition}}
+            </li>
+            <li>
+                Price: €{{b.price}}
+            </li>
+            <li>
+                Author name: {{b.author.name}}
+            </li>
+            <li>
+                Author nationality: {{b.author.nationality}}
+            </li>
+            <li *ngFor="let t of b.tags">
+                {{t}}
+            </li>
+        </ul>
+    </li>
+    <br>
+</ol>
