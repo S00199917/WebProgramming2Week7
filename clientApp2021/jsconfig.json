@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@book/*": ["src/app/book/*"],
+            "@book2/*": ["src/app/book2/*"],
+        }
+    }
+}
